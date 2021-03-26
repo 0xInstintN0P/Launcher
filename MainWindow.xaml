@@ -1,0 +1,32 @@
+﻿<Window x:Class="Launcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Launcher"
+        mc:Ignorable="d"
+        Title="MainWindow" Loaded="Window_Loaded" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="580*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="173*"/>
+        </Grid.ColumnDefinitions>
+        <ProgressBar HorizontalAlignment="Left" Height="8" Margin="17,378,0,0" VerticalAlignment="Top" Width="753" Grid.ColumnSpan="3" Foreground="#FF1260AE" Minimum="-100"/>
+        <ProgressBar HorizontalAlignment="Left" Height="8" Margin="17,396,0,0" VerticalAlignment="Top" Width="753" Grid.ColumnSpan="3" Minimum="-100" Background="#FFE6E6E6" Foreground="#FF326291"/>
+        <Button x:Name="button1" Content="Start" Click="button_Click" HorizontalAlignment="Left" Margin="97,292,0,0" VerticalAlignment="Top" Width="142" Height="38" Foreground="#FF117FBD" FontFamily="Segoe Print" Background="#FF062F42" BorderBrush="#FF00608D"/>
+        <Label x:Name="label1" Content="Ready for start" HorizontalAlignment="Left" Margin="354,350,0,0" VerticalAlignment="Top" Foreground="#FF0A3E5B" FontFamily="Segoe Print"/>
+        <Image HorizontalAlignment="Left" Height="152" Margin="100,76,0,0" VerticalAlignment="Top" Width="139" Source="img/S4.png"/>
+        <Label x:Name="label2" Content="Starting..." HorizontalAlignment="Left" Margin="372,350,0,0" VerticalAlignment="Top" Foreground="#FF0A3E5B" FontFamily="Segoe Print" Visibility="Hidden"/>
+
+
+    </Grid>
+
+    <Window.Background>
+        <ImageBrush>
+            <ImageBrush.ImageSource>
+                <BitmapImage UriSource="img/1.jpg"/>
+            </ImageBrush.ImageSource>
+        </ImageBrush>
+    </Window.Background>
+</Window>
